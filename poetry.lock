@@ -15,12 +15,32 @@ optional = false
 python-versions = ">=3.7.0"
 
 [[package]]
+name = "configparser"
+version = "7.0.0"
+description = "Updated configparser from stdlib for earlier Pythons."
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.extras]
+docs = ["sphinx (>=3.5)", "jaraco.packaging (>=9.3)", "rst.linker (>=1.9)", "furo", "sphinx-lint", "jaraco.tidelift (>=1.4)"]
+testing = ["pytest (>=6,!=8.1.1)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-mypy", "pytest-enabler (>=2.2)", "pytest-ruff (>=0.2.1)", "types-backports"]
+
+[[package]]
 name = "idna"
 version = "3.7"
 description = "Internationalized Domain Names in Applications (IDNA)"
 category = "main"
 optional = false
 python-versions = ">=3.5"
+
+[[package]]
+name = "psycopg2"
+version = "2.9.9"
+description = "psycopg2 - Python-PostgreSQL Database Adapter"
+category = "main"
+optional = false
+python-versions = ">=3.7"
 
 [[package]]
 name = "requests"
@@ -57,11 +77,13 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "b27186d4114ddf6af8c83239646e26a3a002f3f3c9217a05db042d6820be1400"
+content-hash = "8d549ce158f278410625c7cd7af7babf554adaaf199b6cb9ce915ed21e8b085c"
 
 [metadata.files]
 certifi = []
 charset-normalizer = []
+configparser = []
 idna = []
+psycopg2 = []
 requests = []
 urllib3 = []
